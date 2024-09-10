@@ -40,18 +40,18 @@
 #main .main_visual .visual_flex dl dd {
     color: #fff;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .visual_flex dl a {
     display: block;
     max-width: 15rem;
     margin-top: 3rem;
-    font-size: 1.2rem;
+    font-size: 2rem;
     padding: 10px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     background-color: #000;
-    border-radius: 40%;
+    border-radius: 30px;
     color: #fff;
     text-align: center;
 }
@@ -78,7 +78,7 @@
 
 .sound-wrap strong {
     color: #fff;
-    font-size: 10rem;
+    font-size: 7rem;
     font-weight: 700;
 }
 
@@ -94,13 +94,13 @@
 .display .display_flex_wrap p {
     /* fw700+fz2.5r+c */
     font-weight: 700;
-    font-size: 4.5rem;
+    font-size: 3rem;
     color: var(--text-color-gray3);
 }
 
 .display .display_flex_wrap dl dt {
     font-weight: 700;
-    font-size: 10rem;
+    font-size: 7rem;
     color: var(--dark-90);
 }
 
@@ -126,13 +126,13 @@
 .search .search-flex-wrap p {
     /* fw700+fz2.5r+c */
     font-weight: 700;
-    font-size: 4.5rem;
+    font-size: 3rem;
     color: var(--text-color-gray3);
 }
 
 .search .search-flex-wrap h2 {
     font-weight: 700;
-    font-size: 10rem;
+    font-size: 7rem;
     color: var(--dark-90);
 }
 
@@ -159,12 +159,12 @@
 .tag .tag-flex-wrap p {
     /* fw700+fz2.5r+c */
     font-weight: 700;
-    font-size: 4.5rem;
+    font-size: 2.5rem;
     color: var(--text-color-gray3);
 }
 .tag .tag-flex-wrap h2 {
     font-weight: 700;
-    font-size: 10rem;
+    font-size: 7rem;
     color: var(--dark-90);
 }
 .tag .tag-flex-wrap figure img {
@@ -190,19 +190,19 @@
 .track-flex-wrap p {
     /* fw700+fz2.5r+c */
     font-weight: 700;
-    font-size: 4.5rem;
+    font-size: 2.5rem;
     color: var(--text-color-gray3);
 }
 
 .track-flex-wrap dl dt {
     font-weight: 700;
-    font-size: 10rem;
+    font-size: 7rem;
     color: var(--dark-90);
 }
 .track-flex-wrap dl dd {
     color: #fff;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 2.2rem;
 }
 
 .track-flex-wrap dl figure {
