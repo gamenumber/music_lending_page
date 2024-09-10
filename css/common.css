@@ -122,6 +122,7 @@ li {
 
 /* footer */
 #footer {
+    margin-top: 5rem;
     background: var(--sub-color5);
 }
 
@@ -129,9 +130,11 @@ li {
     display: flex;
     flex-direction: column;
     font: 1.6rem/1.5 "Inria Sans", sans-serif;
+    justify-content: center;
 }
 
 #footer .footer_flex_wrap .sns {
+    margin-top: 1.5rem;
     display: flex;
     justify-content: center;
     gap: 5rem;
