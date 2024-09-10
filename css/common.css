@@ -14,7 +14,10 @@
     --title-color: #000;
     --text-color: #000;
     --text-color-gray: #585858;
+    --text-color-gray2: #8a8a8a;
+    --text-color-gray3: #b1b1b1;
     --text-shadow-color: rgba(0, 0, 0, 0.7);
+    --dark-gray-color: #666;
     --gray-color: #dfdfdf;
     --grid-color: #ff6347;
     --white-100: rgb(123, 97, 97);
@@ -94,10 +97,9 @@ li {
 }
 
 /* header */
-#header {
+/* #header {
     background: var(--sub-color6);
-    padding: 10rem 10rem;
-}
+} */
 
 .header_con {
     display: flex;
@@ -120,10 +122,15 @@ li {
     font-weight: 500;
 }
 
+.header_con .gnb li:last-child p {
+    color: #fff;
+    background: #000;
+    padding: 1rem;
+}
+
 /* footer */
 #footer {
-    margin-top: 5rem;
-    background: var(--sub-color5);
+    background: var(--gray-color);
 }
 
 #footer .footer_flex_wrap {
