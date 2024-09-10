@@ -77,7 +77,9 @@ img {
     object-fit: cover;
 }
 
-ul,ol,li {
+ul,
+ol,
+li {
     list-style: none;
 }
 
@@ -91,7 +93,6 @@ ul,ol,li {
     text-align: center;
 }
 
-
 /* header */
 #header {
     background: var(--sub-color6);
@@ -104,9 +105,8 @@ ul,ol,li {
     justify-content: center;
 }
 
-
 .header_con a strong {
-    font: 3.5rem/1.5 'Inria Sans', sans-serif;
+    font: 3.5rem/1.5 "Inria Sans", sans-serif;
 }
 
 .header_con .gnb {
@@ -117,11 +117,27 @@ ul,ol,li {
 
 .header_con .gnb li p {
     font-size: 2.5rem;
+    font-weight: 500;
 }
-
-
 
 /* footer */
 #footer {
     background: var(--sub-color5);
+}
+
+#footer .footer_flex_wrap {
+    display: flex;
+    flex-direction: column;
+    font: 1.6rem/1.5 "Inria Sans", sans-serif;
+}
+
+#footer .footer_flex_wrap .sns {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+#footer .footer_flex_wrap .sns figure img {
+    width: 50px;
+    height: 50px;
 }
