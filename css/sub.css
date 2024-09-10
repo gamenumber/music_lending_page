@@ -90,6 +90,10 @@ button:hover {
 }
 
 /* 무료체험 */
+.container {
+    max-width: 1200px; /* 최대 너비를 1200px로 설정하여 너무 넓지 않도록 제한 */
+    margin: 0 auto; /* 가운데 정렬을 유지하기 위해 상하 0, 좌우 자동 마진 적용 */
+}
 .highlight {
     color: #e8491d;
     font-weight: bold;
