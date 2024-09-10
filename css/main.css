@@ -1,10 +1,5 @@
 @charset "utf-8";
 
-#main {
-    border: 1px solid #000;
-    /* background-color: var(--sub-color4); */
-}
-
 /* 메인 비주얼 */
 #main .main_visual {
     background: var(--gray-color);
@@ -122,3 +117,28 @@
 }
 
 /* search */
+.search {
+    padding: 10rem;
+    background: var(--main-color);
+}
+
+.search .search-flex-wrap p {
+    /* fw700+fz2.5r+c */
+    font-weight: 700;
+    font-size: 4.5rem;
+    color: var(--text-color-gray3);
+}
+
+.search .search-flex-wrap h2 {
+    font-weight: 700;
+    font-size: 10rem;
+    color: var(--dark-90);
+}
+
+.search .search-flex-wrap figure img {
+    margin-top: 2rem;
+    width: 100%;
+    min-height: 40rem;
+}
+
+/* tag */
