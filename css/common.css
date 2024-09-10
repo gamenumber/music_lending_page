@@ -91,7 +91,7 @@ li {
 /* 기본 inner */
 .inner {
     width: 140rem;
-    background: var(--grid-color);
+    /* background: var(--grid-color); */
     margin: 0 auto; /* Center the inner content */
     text-align: center;
 }
@@ -130,7 +130,8 @@ li {
 
 /* footer */
 #footer {
-    background: var(--gray-color);
+    padding: 10rem;
+    /* background: var(--gray-color); */
 }
 
 #footer .footer_flex_wrap {

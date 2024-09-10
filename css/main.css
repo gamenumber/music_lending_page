@@ -118,8 +118,9 @@
 
 /* search */
 .search {
+    margin-top: 5rem;
     padding: 10rem;
-    background: var(--main-color);
+    /* background: var(--main-color); */
 }
 
 .search .search-flex-wrap p {
@@ -142,3 +143,74 @@
 }
 
 /* tag */
+.tag {
+    margin-top: 5rem;
+    padding: 10rem;
+    /* background: var(--main-color); */
+}
+
+.tag .tag-flex-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tag .tag-flex-wrap p {
+    /* fw700+fz2.5r+c */
+    font-weight: 700;
+    font-size: 4.5rem;
+    color: var(--text-color-gray3);
+}
+.tag .tag-flex-wrap h2 {
+    font-weight: 700;
+    font-size: 10rem;
+    color: var(--dark-90);
+}
+.tag .tag-flex-wrap figure img {
+    margin-top: 2rem;
+    width: 100%;
+    min-height: 40rem;
+}
+
+/* soundtrack */
+.soundtrack {
+    margin-top: 5rem;
+    padding: 10rem;
+    /* background: var(--main-color); */
+}
+
+.track-flex-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.track-flex-wrap p {
+    /* fw700+fz2.5r+c */
+    font-weight: 700;
+    font-size: 4.5rem;
+    color: var(--text-color-gray3);
+}
+
+.track-flex-wrap dl dt {
+    font-weight: 700;
+    font-size: 10rem;
+    color: var(--dark-90);
+}
+.track-flex-wrap dl dd {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.track-flex-wrap dl figure {
+    margin-top: 5rem;
+}
+
+.track-flex-wrap dl figure img {
+    margin-top: 2rem;
+    width: 100%;
+    min-height: 40rem;
+}
