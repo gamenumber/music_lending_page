@@ -3,6 +3,7 @@
 /* 메인 비주얼 */
 
 #main .main_visual {
+    /* margin-top: 4rem; */
     position: relative;
     background: url(../img/main/main_visual.jpg) no-repeat 0 0 / cover;
     padding-bottom: 5rem;
@@ -15,7 +16,7 @@
     position: absolute;
     width: 100%;
     z-index: 2;
-    background: var(--dark-50);
+    background: var(--dark-40);
     min-height: 60.8rem;
 }
 
@@ -76,10 +77,18 @@
     font-size: 2rem;
     padding: 10px;
     /* border: 1px solid #000; */
-    background-color: #000;
+    background-color: var(--main-color);
     border-radius: 30px;
     color: #fff;
     text-align: center;
+    transition: 0.4s;
+}
+
+.visual_flex dl a:hover {
+    box-shadow: 0 0 10px rgba(186, 85, 211, 0.8),
+        /* 밝은 연보라색 빛 */ 0 0 20px rgba(218, 112, 214, 0.6),
+        /* 연분홍/보라 중간 빛 */ 0 0 30px rgba(255, 182, 193, 0.4); /* 연분홍 빛 */
+    border: 2px solid rgba(186, 85, 211, 0.8); /* 연보라색 테두리 */
 }
 
 /* sound */
@@ -115,6 +124,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .display .display_flex_wrap p {
     /* fw700+fz2.5r+c */
@@ -191,11 +201,6 @@
     font-weight: 700;
     font-size: 7rem;
     color: var(--dark-90);
-}
-.tag .tag-flex-wrap figure img {
-    margin-top: 2rem;
-    width: 100%;
-    min-height: 40rem;
 }
 
 /* soundtrack */
