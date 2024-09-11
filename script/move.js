@@ -28,7 +28,12 @@ const rectangles = [];
 const rectProps = { width: 80, height: 30, radius: 15, gap: 30 };
 
 function createRectangles(row, direction) {
-    const y = 10 + ((canvas.height - 20) / 12) * (row + 1);
+    // Calculate the Y position dynamically based on the number of rows (3 in this case)
+    const rowCount = 3;
+    const margin = 20; // Margin from top and bottom of canvas
+    const availableHeight = canvas.height - margin * 2;
+    const y = margin + (availableHeight / rowCount) * (row + 0.5);
+
     const speed = direction === "left" ? -2 : 2;
     const count =
         Math.ceil(canvas.width / (rectProps.width + rectProps.gap)) + 1;
@@ -58,7 +63,8 @@ function resizeCanvas() {
     canvas.width = inner.clientWidth;
     canvas.height = inner.clientHeight * 6;
     rectangles.length = 0;
-    for (let i = 0; i < 12; i++)
+    // Create only 3 rows of rectangles
+    for (let i = 0; i < 3; i++)
         createRectangles(i, i % 2 === 0 ? "left" : "right");
 }
 
