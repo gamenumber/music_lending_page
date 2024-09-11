@@ -5,6 +5,8 @@
 #main .main_visual {
     position: relative;
     background: url(../img/main/main_visual.jpg) no-repeat 0 0 / cover;
+    padding-bottom: 5rem;
+    overflow: hidden;
 }
 
 #main .main_visual::before {
@@ -14,7 +16,7 @@
     width: 100%;
     z-index: 2;
     background: var(--dark-50);
-    min-height: 50.8rem;
+    min-height: 60.8rem;
 }
 
 #main .main_visual .visual_flex .flex_title {
