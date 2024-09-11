@@ -1,14 +1,11 @@
 const hashtags = [
+    "#R&B",
     "#Rock",
     "#Jazz",
     "#Classical",
     "#HipHop",
     "#Electronic",
     "#Pop",
-    "#Reggae",
-    "#Blues",
-    "#Country",
-    "#Folk",
     "#Metal",
     "#Punk",
     "#Soul",
@@ -20,9 +17,13 @@ const hashtags = [
     "#Electronic",
     "#Pop",
     "#Reggae",
-    "#Blues",
-    "#Country",
-    "#Folk",
+    "#R&B",
+    "#Rock",
+    "#Jazz",
+    "#Classical",
+    "#HipHop",
+    "#Electronic",
+    "#Pop",
     "#Metal",
     "#Punk",
     "#Soul",
@@ -34,47 +35,6 @@ const hashtags = [
     "#Electronic",
     "#Pop",
     "#Reggae",
-    "#Blues",
-    "#Country",
-    "#Folk",
-    "#Metal",
-    "#Punk",
-    "#Soul",
-    "#R&B",
-    "#Rock",
-    "#Jazz",
-    "#Classical",
-    "#HipHop",
-    "#Electronic",
-    "#Pop",
-    "#Reggae",
-    "#Blues",
-    "#Country",
-    "#Folk",
-    "#Metal",
-    "#Punk",
-    "#Soul",
-    "#R&B",
-    "#Rock",
-    "#Jazz",
-    "#Classical",
-    "#HipHop",
-    "#Electronic",
-    "#Pop",
-    "#Reggae",
-    "#Blues",
-    "#Country",
-    "#Folk",
-    "#Metal",
-    "#Punk",
-    "#Soul",
-    "#R&B",
-    "#Rock",
-    "#Jazz",
-    "#Classical",
-    "#HipHop",
-    "#Electronic",
-    "#Pop",
 ];
 
 const hashtagContainer = document.getElementById("hashtag-container");
@@ -91,25 +51,55 @@ function displayHashtags() {
     });
 }
 
+function getRandomColor() {
+    const letters = "0123456789ABCDEF";
+    let color = "#";
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+function displayHashtags() {
+    hashtagContainer.innerHTML = "";
+    hashtags.forEach((tag, index) => {
+        const span = document.createElement("span");
+        span.textContent = tag;
+        span.classList.add("hashtag");
+        span.style.zIndex = index; // 각 태그의 z-index 설정
+        span.style.backgroundColor = getRandomColor(); // 랜덤 색상 설정
+        hashtagContainer.appendChild(span);
+        animateTag(span);
+    });
+}
+
 function animateTag(tag) {
     const containerWidth = hashtagContainer.clientWidth;
     const containerHeight = hashtagContainer.clientHeight;
-    let x = Math.random() * containerWidth * 0.1; // 왼쪽 대각선 위에서 생성되도록 x 초기값 조정
-    let y = Math.random() * containerHeight * 0.1; // 왼쪽 대각선 위에서 생성되도록 y 초기값 조정
-    let speedX = Math.random() * 2 + 1;
-    let speedY = Math.random() * 2 + 1;
+    let x = Math.random() * containerWidth; // Initial x position
+    let y = Math.random() * containerHeight; // Initial y position
+    let speedX = Math.random() * 4 + 2; // Increased speed
+    let speedY = Math.random() * 4 + 2; // Increased speed
 
     function move() {
         x += speedX;
         y += speedY;
 
-        if (x < 0 || x + tag.clientWidth > containerWidth) {
+        // Check for collision with container boundaries
+        if (x < 0) {
+            x = 0;
             speedX = -speedX;
-            x = Math.max(0, Math.min(x, containerWidth - tag.clientWidth));
+        } else if (x + tag.clientWidth > containerWidth) {
+            x = containerWidth - tag.clientWidth;
+            speedX = -speedX;
         }
-        if (y < 0 || y + tag.clientHeight > containerHeight) {
+
+        if (y < 0) {
+            y = 0;
             speedY = -speedY;
-            y = Math.max(0, Math.min(y, containerHeight - tag.clientHeight));
+        } else if (y + tag.clientHeight > containerHeight) {
+            y = containerHeight - tag.clientHeight;
+            speedY = -speedY;
         }
 
         tag.style.transform = `translate(${x}px, ${y}px)`;
