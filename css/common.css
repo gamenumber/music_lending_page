@@ -160,3 +160,70 @@ li {
     width: 50px;
     height: 50px;
 }
+
+/* 테그 */
+.hashtag {
+    display: inline-block;
+    background-color: #e0e0e0;
+    border-radius: 0.5rem;
+    padding: 2rem; /* 패딩을 더 크게 */
+    margin: 2rem; /* 마진을 더 크게 */
+    font-size: 2rem; /* 글씨를 더 크게 */
+    /* position: absolute; */
+    transition: transform 0.1s linear; /* 부드러운 움직임을 위해 transition 추가 */
+}
+.hashtag:nth-child(1) {
+    background-color: #e1bee7;
+}
+.hashtag:nth-child(2) {
+    background-color: #ce93d8;
+}
+.hashtag:nth-child(3) {
+    background-color: #ba68c8;
+}
+.hashtag:nth-child(4) {
+    background-color: #ab47bc;
+}
+.hashtag:nth-child(5) {
+    background-color: #9c27b0;
+}
+.hashtag:nth-child(6) {
+    background-color: #8e24aa;
+}
+.hashtag:nth-child(7) {
+    background-color: #7b1fa2;
+}
+.hashtag:nth-child(8) {
+    background-color: #6a1b9a;
+}
+.hashtag:nth-child(9) {
+    background-color: #4a148c;
+}
+.hashtag:nth-child(10) {
+    background-color: #ea80fc;
+}
+.hashtag:nth-child(11) {
+    background-color: #e040fb;
+}
+.hashtag:nth-child(12) {
+    background-color: #d500f9;
+}
+.hashtag:nth-child(13) {
+    background-color: #aa00ff;
+}
+.hashtag:nth-child(14) {
+    background-color: #8e24aa;
+}
+
+.hashtag-container {
+    border: 1px solid #000;
+    /* padding: 10rem; */
+    /* position: relative; */
+    width: 80%; /* 부모 요소의 너비 */
+    min-height: 80rem; /* 부모 요소의 높이 */
+    overflow: hidden; /* 넘치는 부분 숨기기 */
+    display: flex;
+    justify-content: center; /* 가로 가운데 정렬 */
+    align-items: center; /* 세로 가운데 정렬 */
+    margin: 0 auto; /* 부모 요소를 가운데 정렬 */
+}
