@@ -42,6 +42,14 @@
     --dark-20: rgba(0, 0, 0, 0.2);
     --dark-10: rgba(0, 0, 0, 0.1);
     --dark-0: rgba(0, 0, 0, 0);
+    --hover-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    --secondary-color: #3a7bc8;
+    --accent-color: #1ed760;
+    --text-color: #333333;
+    --border-color: #e0e0e0;
+    --main-bg: #ffffff;
+    --box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    --hover-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 ::selection {

@@ -42,42 +42,43 @@
         </header>
         <!-- //e : header -->
 
-        <div class="container">
-            <section class="promo-info">
-                <h2>무제한 음악 스트리밍을 3개월 동안 무료로!</h2>
-                <p>지금 가입하시면 다음과 같은 혜택을 누리실 수 있습니다:</p>
-                <ul>
-                    <li>수백만 곡의 음악을 광고 없이 감상</li>
-                    <li>오프라인 재생으로 데이터 절약</li>
-                    <li>고음질 오디오 스트리밍</li>
-                    <li>개인 맞춤 플레이리스트</li>
-                </ul>
+        <div class="promo-container">
+            <header class="promo-header">
+                <h1 class="promo-title">무제한 음악의 세계로</h1>
+                <p class="promo-subtitle">3개월 동안 무료로 즐기세요!</p>
+            </header>
+
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">🎵</div>
+                    <h3 class="benefit-title">광고 없는 음악 감상</h3>
+                    <p>수백만 곡을 끊김 없이 들어보세요</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">📱</div>
+                    <h3 class="benefit-title">오프라인 재생</h3>
+                    <p>데이터 걱정 없이 음악을 즐기세요</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🎧</div>
+                    <h3 class="benefit-title">고음질 스트리밍</h3>
+                    <p>탁월한 음질로 음악을 감상하세요</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">📊</div>
+                    <h3 class="benefit-title">개인 맞춤 플레이리스트</h3>
+                    <p>당신의 취향에 맞는 음악을 발견하세요</p>
+                </div>
+            </div>
+
+            <div class="pricing-info">
                 <p>
                     3개월 후에는 월 9,900원으로 서비스가 자동 연장됩니다. 언제든
                     해지 가능합니다.
                 </p>
-            </section>
+            </div>
 
-            <section class="signup-form">
-                <h2>지금 바로 시작하세요!</h2>
-                <form action="/subscribe" method="post">
-                    <input
-                        type="text"
-                        name="name"
-                        placeholder="이름"
-                        required
-                    />
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="이메일"
-                        required
-                    />
-                    <button type="submit" class="btn">
-                        3개월 무료체험 시작하기
-                    </button>
-                </form>
-            </section>
+            <a href="#" class="cta-button">무료 체험 시작하기</a>
         </div>
         <!-- s : footer -->
         <footer id="footer">
