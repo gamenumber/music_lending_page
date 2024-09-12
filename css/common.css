@@ -11,6 +11,7 @@
     --sub-color4: #2c3e50;
     --sub-color5: #ffb6c1;
     --sub-color6: #98ff98;
+    --sub-color7: #ffd1dc; /* 연한 핑크 색상 */
     --title-color: #000;
     --text-color: #000;
     --text-color-gray: #585858;
@@ -61,6 +62,7 @@ body {
     text-transform: capitalize; /* ttc: 단어의 첫글자를 대문자로 */
     word-break: keep-all; /* wbka */
     margin: 0 auto;
+    /* background-color: var(--sub-color7); */
 }
 
 a {
@@ -163,8 +165,9 @@ li {
 
 /* 테그 */
 .hashtag-container {
-    /* border: 1px solid #000; *
-    /* position: relative; */
+    /* 기존 스타일 */
+    /* background-color: var(--sub-color5); */
+    padding: 5rem;
     width: 80%; /* 부모 요소의 너비 */
     min-height: 40rem; /* 부모 요소의 높이 */
     overflow: hidden; /* 넘치는 부분 숨기기 */
@@ -181,15 +184,6 @@ li {
     color: var(--dark-50);
     font-weight: bold;
     font-size: 4rem; /* Increased font size */
-    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+    transition: all 0.3s ease; /* 부드러운 전환 효과 */
     box-shadow: 0 0 5px rgba(196, 22, 196, 0.5);
-}
-
-.hashtag:hover {
-    background-color: #ffffff;
-    color: var(--sub-color3);
-    box-shadow: 0 0 10px rgba(186, 85, 211, 0.8),
-        /* 밝은 연보라색 빛 */ 0 0 20px rgba(218, 112, 214, 0.6),
-        /* 연분홍/보라 중간 빛 */ 0 0 30px rgba(255, 182, 193, 0.4); /* 연분홍 빛 */
-    border: 2px solid rgba(186, 85, 211, 0.8); /* 연보라색 테두리 */
 }
