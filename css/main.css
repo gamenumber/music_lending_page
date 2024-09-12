@@ -95,8 +95,10 @@
     height: 200%;
     background: radial-gradient(
         circle,
-        rgba(163, 163, 163, 0.8) 0%,
-        rgba(255, 255, 255, 0) 80%
+        rgba(255, 105, 180, 0.6) 0%,
+        /* 핫 핑크 */ rgba(135, 206, 235, 0.4) 40%,
+        /* 스카이 블루 */ rgba(255, 223, 0, 0.2) 60%,
+        /* 골드 */ rgba(255, 255, 255, 0) 80%
     );
     transform: scale(0);
     transition: transform 0.6s ease-out;
