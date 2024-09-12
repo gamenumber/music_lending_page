@@ -76,7 +76,17 @@
     margin-top: 3rem;
     font-size: 2rem;
     padding: 15px 30px;
-    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    background: #a968eb; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #e100ff,
+        #a952ff
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #e100ff,
+        #a952ff
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 50px;
     color: #fff;
     text-align: center;
