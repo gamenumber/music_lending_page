@@ -71,24 +71,74 @@
 .visual_flex dl a {
     position: relative;
     z-index: 3;
-    display: block;
+    display: inline-block;
     max-width: 15rem;
     margin-top: 3rem;
     font-size: 2rem;
-    padding: 10px;
-    /* border: 1px solid #000; */
-    background-color: var(--main-color);
-    border-radius: 30px;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    border-radius: 50px;
     color: #fff;
     text-align: center;
-    transition: 0.4s;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-decoration: none;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.visual_flex dl a::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(
+        circle,
+        rgba(163, 163, 163, 0.8) 0%,
+        rgba(255, 255, 255, 0) 80%
+    );
+    transform: scale(0);
+    transition: transform 0.6s ease-out;
 }
 
 .visual_flex dl a:hover {
-    box-shadow: 0 0 10px rgba(186, 85, 211, 0.8),
-        /* 밝은 연보라색 빛 */ 0 0 20px rgba(218, 112, 214, 0.6),
-        /* 연분홍/보라 중간 빛 */ 0 0 30px rgba(255, 182, 193, 0.4); /* 연분홍 빛 */
-    border: 2px solid rgba(186, 85, 211, 0.8); /* 연보라색 테두리 */
+    transform: perspective(1000px) rotateX(15deg) scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 0 20px rgba(186, 85, 211, 0.6),
+        0 0 40px rgba(218, 112, 214, 0.4);
+}
+
+.visual_flex dl a:hover::before {
+    transform: scale(1) rotate(45deg);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.visual_flex dl a:hover {
+    animation: pulse 1s infinite;
+}
+
+.visual_flex dl a::after {
+    content: "→";
+    position: absolute;
+    right: 20px;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.visual_flex dl a:hover::after {
+    opacity: 1;
+    right: 15px;
 }
 
 /* sound */
