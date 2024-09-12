@@ -218,3 +218,47 @@ li {
     transition: all 0.3s ease; /* 부드러운 전환 효과 */
     box-shadow: 0 0 5px rgba(196, 22, 196, 0.5);
 }
+
+/* 탭 */
+.tab-wrapper {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+}
+.tab-container {
+    width: 300px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.tab-content {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+.tab {
+    flex: 0 0 300px;
+    padding: 20px;
+    text-align: center;
+}
+.nav-button {
+    font-size: 24px;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+    margin: 0 20px;
+}
+.nav-button:hover {
+    background-color: #0056b3;
+}
