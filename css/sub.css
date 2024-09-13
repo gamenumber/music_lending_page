@@ -250,6 +250,11 @@ button:hover,
     animation: shake 0.3s;
 }
 
+.login {
+    margin: 3rem auto;
+    padding: 4rem 6rem;
+}
+
 @media (max-width: 768px) {
     .container,
     .promo-container {

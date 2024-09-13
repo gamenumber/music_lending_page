@@ -16,10 +16,8 @@ class RoundedRectangle {
 
     update() {
         this.x += this.speed;
-        if (this.speed > 0 && this.x > canvas.width) {
+        if (this.x > canvas.width) {
             this.x = -this.width;
-        } else if (this.speed < 0 && this.x + this.width < 0) {
-            this.x = canvas.width;
         }
     }
 }
@@ -27,21 +25,18 @@ class RoundedRectangle {
 const rectangles = [];
 const rectProps = { width: 80, height: 30, radius: 15, gap: 30 };
 
-function createRectangles(row, direction) {
-    // Calculate the Y position dynamically based on the number of rows (3 in this case)
+function createRectangles(row) {
     const rowCount = 3;
-    const margin = 20; // Margin from top and bottom of canvas
+    const margin = 20;
     const availableHeight = canvas.height - margin * 2;
     const y = margin + (availableHeight / rowCount) * (row + 0.5);
 
-    const speed = direction === "left" ? -2 : 2;
+    const speed = 2; // All rectangles move to the right
     const count =
         Math.ceil(canvas.width / (rectProps.width + rectProps.gap)) + 1;
 
     for (let i = 0; i < count; i++) {
-        const x =
-            i * (rectProps.width + rectProps.gap) -
-            (direction === "left" ? 0 : rectProps.width);
+        const x = i * (rectProps.width + rectProps.gap) - rectProps.width;
         const color = `rgb(${128 + Math.random() * 127}, 0, ${
             128 + Math.random() * 127
         })`;
@@ -63,9 +58,7 @@ function resizeCanvas() {
     canvas.width = inner.clientWidth;
     canvas.height = inner.clientHeight * 6;
     rectangles.length = 0;
-    // Create only 3 rows of rectangles
-    for (let i = 0; i < 3; i++)
-        createRectangles(i, i % 2 === 0 ? "left" : "right");
+    for (let i = 0; i < 3; i++) createRectangles(i);
 }
 
 (function animate() {
