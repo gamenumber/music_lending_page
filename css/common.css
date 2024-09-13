@@ -291,7 +291,7 @@ li {
 
 .track2 {
     margin-top: 5rem;
-    background: #ff5;
+    /* background: #ff5; */
     width: 800px;
     height: 500px;
     display: block;
