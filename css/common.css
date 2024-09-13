@@ -191,7 +191,7 @@ li {
 
 /* footer */
 #footer {
-    padding: 10rem;
+    padding: 4rem;
     /* background: var(--gray-color); */
 }
 
@@ -200,6 +200,7 @@ li {
     flex-direction: column;
     font: 1.6rem/1.5 "Inria Sans", sans-serif;
     justify-content: center;
+    /* gap: 4rem; */
 }
 
 #footer .footer_flex_wrap .sns {
@@ -294,5 +295,20 @@ li {
     /* background: #ff5; */
     width: 800px;
     height: 500px;
-    display: block;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.track2 h2 {
+    position: absolute;
+    color: #fff;
+    font-size: 6rem;
+    z-index: 100;
+}
+
+.login2 {
+    margin: 3rem auto;
+    padding: 4rem;
 }
