@@ -31,7 +31,7 @@
     position: relative;
     z-index: 3;
     width: 5rem;
-    height: 5rem;
+    aspect-ratio: 1/1;
 }
 
 #main .main_visual .visual_flex .flex_title strong {
@@ -156,10 +156,12 @@
 
 /* sound */
 .sound {
+    /* width: 100%; */
     margin-top: 3rem;
     padding: 10rem;
 }
 .sound-wrap {
+    /* width: 100%; */
     background: var(--main-color);
     padding: 10rem;
     display: flex;
@@ -181,7 +183,7 @@
 
 /* display */
 .display .display_flex_wrap {
-    padding: 10rem;
+    padding: 5.24%;
     background: var(--main-color);
     display: flex;
     flex-direction: column;
@@ -216,9 +218,15 @@
 
 /* search */
 .search {
+    width: 100%;
     margin-top: 5rem;
     padding: 10rem;
     /* background: var(--main-color); */
+}
+
+.search .search-flex-wrap {
+    height: 100%;
+    overflow: hidden;
 }
 
 .search .search-flex-wrap p {
@@ -309,9 +317,8 @@
 }
 
 .track {
-    width: 800px;
-    height: 500px;
-    display: block;
+    width: 100%;
+    aspect-ratio: 1/0.625;
 }
 
 .login2 {
@@ -320,7 +327,7 @@
 }
 
 .track2 {
-    width: 800px;
+    max-width: 800px;
     aspect-ratio: 16/9;
 }
 
