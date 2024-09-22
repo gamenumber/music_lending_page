@@ -283,32 +283,3 @@ li {
     background-color: #0056b3;
 }
 
-/* track */
-.track {
-    width: 800px;
-    height: 500px;
-    display: block;
-}
-
-.track2 {
-    margin-top: 5rem;
-    /* background: #ff5; */
-    width: 800px;
-    height: 500px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.track2 h2 {
-    position: absolute;
-    color: #fff;
-    font-size: 6rem;
-    z-index: 100;
-}
-
-.login2 {
-    margin: 3rem auto;
-    padding: 4rem;
-}
